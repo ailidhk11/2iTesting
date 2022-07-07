@@ -1,0 +1,15 @@
+
+func multiples(a: Int, x: Int) {
+    for b in stride(from: 0, through:(x), by: a) {
+        print(b)
+    }
+    for c in stride(from: 0, through: (x*2), by: (a+1)) {
+        print(c)
+    }
+    for d in stride(from: 0, through:(x*3), by: (a+2)) {
+        print(d)
+    }
+}
+
+let test = multiples(a: 2, x: 12)
+print(test)
